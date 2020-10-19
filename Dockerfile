@@ -65,6 +65,7 @@ COPY php.ini /usr/local/etc/php/
 COPY php-fpm.conf /usr/local/etc/php-fpm.conf
 COPY php-fpm.d /usr/local/etc/php-fpm.d
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY conf.d /etc/nginx/conf.d
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 80
