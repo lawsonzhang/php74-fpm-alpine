@@ -7,7 +7,8 @@ RUN apk update; \
     apk del tzdata; \
     \
     addgroup -g 88888 -S yiibool; \
-    adduser -u 88888 -h /home/yiibool -S -G yiibool yiibool
+    adduser -u 88888 -h /home/yiibool -S -G yiibool yiibool; \
+    chown -R yiibool:yiibool /var/lib/nginx/
 
 ENV PHPIZE_DEPS \
     autoconf \
